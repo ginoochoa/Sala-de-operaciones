@@ -1,0 +1,4 @@
+<odoo>
+    <menuitem id="surgery_reservation_menu" name="Sala de operaciones" sequence="10"/>
+    <menuitem id="surgery_reservation_submenu" name="Reservas" parent="surgery_reservation_menu" action="sala_operaciones.surgery_reservation_action"/>
+</odoo>

@@ -1,0 +1,44 @@
+/* Estilos para pantallas pequeñas (teléfonos) */
+@media only screen and (max-width: 768px) {
+  .oe_form {
+    width: 100%;
+    background-color: #FFC0CB; /* Color rosado */
+  }
+  .oe_form_field {
+    width: 100%;
+  }
+  .oe_view {
+    padding: 10px;
+    background-color: #F7F7F7; /* Color gris claro */
+  }
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .oe_form {
+    width: 80%;
+    background-color: #FFC0CB; /* Color rosado */
+  }
+  .oe_form_field {
+    width: 80%;
+  }
+  .oe_view {
+    padding: 20px;
+    background-color: #F7F7F7; /* Color gris claro */
+  }
+}
+
+/* Estilos para pantallas grandes (computadoras) */
+@media only screen and (min-width: 1025px) {
+  .oe_form {
+    width: 60%;
+    background-color: #FFC0CB; /* Color rosado */
+  }
+  .oe_form_field {
+    width: 60%;
+  }
+  .oe_view {
+    padding: 30px;
+    background-color: #F7F7F7; /* Color gris claro */
+  }
+}

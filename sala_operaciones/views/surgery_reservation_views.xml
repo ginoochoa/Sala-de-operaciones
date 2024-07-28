@@ -1,0 +1,65 @@
+<odoo>
+    <record id="surgery_reservation_action" model="ir.actions.act_window">
+        <field name="name">Reservas de sala de operaciones</field>
+        <field name="res_model">surgery.reservation</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id="surgery_reservation_tree_view" model="ir.ui.view">
+        <field name="name">surgery.reservation.tree</field>
+        <field name="model">surgery.reservation</field>
+        <field name="arch" type="xml">
+            <tree>
+            <field name="date" string="Fecha"/>
+            <field name="patient" string="Paciente"/>
+            <field name="operating_room_id" string="Sala de operaciones"/>
+            <field name="start_time" string="Hora de inicio"/>
+            <field name="end_time" string="Hora de fin"/>
+            </tree>
+        </field>
+    </record>
+
+
+<record id="surgery_reservation_form_view" model="ir.ui.view">
+    <field name="name">surgery.reservation.form</field>
+    <field name="model">surgery.reservation</field>
+    <field name="arch" type="xml">
+        <form string="Reserva de sala de operaciones">
+            <label for="patient">Paciente</label>
+            <field name="patient"/>
+            <label for="date">Fecha</label>
+            <field name="date"/>
+            <label for="operating_room_id">Sala de operaciones</label>
+            <field name="operating_room_id"/>
+            <label for="start_time">Hora de inicio</label>
+            <field name="start_time"/>
+            <label for="end_time">Hora de fin</label>
+            <field name="end_time"/>
+        </form>
+    </field>
+</record>
+
+
+
+
+
+
+
+
+   <record id="view_surgery_reservation_calendar" model="ir.ui.view">
+        <field name="name">surgery.reservation.calendar</field>
+        <field name="model">surgery.reservation</field>
+        <field name="arch" type="xml">
+            <calendar string="Reservas de sala de operaciones">
+                <field name="operating_room_id"/>
+                <field name="start_time"/>
+                <field name="end_time"/>
+            </calendar>
+        </field>
+    </record>
+
+
+ <!-- Menú -->
+    <menuitem id="surgery_reservation_menu" name="Sala de operaciones" 
+              action="surgery_reservation_action" 
+              parent="base.menu_custom"/>
+</odoo>
