@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_operating_room,operating.room,model_operating_room,,1,1,1,1
+access_reservation,reservation,model_reservation,,1,1,1,1
+access_expense,expense,model_expense,,1,1,1,1
+access_hospitalization,hospitalization,model_hospitalization,,1,1,1,1
